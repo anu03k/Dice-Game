@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-function NumberSelect() {
+function NumberSelect(  {error,selectedNum , setSelectNUm}) {
 
     const arrayNum=[1,2,3,4,5,6]
-    const [selectedNum , setSelectNUm]=useState();
+  
   return (
     <NumberSelectContainer>
+      <p className='error'>{error}</p>
 
     <div className='flex'>
 {
@@ -42,6 +43,10 @@ align-items:end;
 p{
   font-size:24px;
   font-weight:700;
+}
+.error{
+  color:red;
+  font-size:19px;
 }
 
 `

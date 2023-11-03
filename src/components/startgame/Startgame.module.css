@@ -13,3 +13,7 @@
     transform: scale(1.03);
     transition: 0.3s background ease-in;
 }
+
+.rules {
+    display: none;
+}
